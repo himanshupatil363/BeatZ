@@ -625,9 +625,8 @@
 	function getContent(fragmentId, callback){
 
 	var pages = {
-	home: "This is the Home page. Welcome to my site.",
-	about: "This page will describe what my site is about",
-	contact: "Contact me on this page if you have any questions"
+	home: document.getElementById("home").innerHTML,
+	about: document.getElementById("blog").innerHTML
 	};
 
 	callback(pages[fragmentId]);
