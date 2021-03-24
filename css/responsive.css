@@ -391,6 +391,14 @@
 	.beatx-pagination.text-left {text-align: center !important;}
 	.section-title.v2 > h3 {font-size: 30px;line-height: 36px;}
 }
+.menu-btn{
+	display: none;
+}
+@media only screen and (max-width: 1196px){
+	.menu-btn{
+		display: block !important;
+	}
+}
 
 @media only screen and (max-width: 480px) {
 	.top-header .social-links {display: none;}	
