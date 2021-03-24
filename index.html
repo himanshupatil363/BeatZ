@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>BeatX - Audio Podcast and Music Template</title>
+	<title>BeatZ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="BeatX - Multipurpose Audio Podcast and Music HTML Template" />
 	<meta name="author" content="Softcircles">
@@ -35,10 +35,8 @@
 		
 		<div id="header"></div>
 		<div id="homeinclude"></div>
-		<section id="blogs">
-			<h1>blogs</h1>
-		</section>
-
+		<div id="blogsinclude"></div>
+		<div id="latestreleaseinclude"></div>
 		<div id="footer"></div>
 	</div>
 <script src="js/all.min.js"></script>
@@ -81,6 +79,16 @@
 		  $("#homeinclude").load("home.html"); 
 		});
 		</script>
+		<script> 
+			$(function(){
+			  $("#blogsinclude").load("blog.html"); 
+			});
+			</script>
+			<script> 
+				$(function(){
+				  $("#latestreleaseinclude").load("release.html"); 
+				});
+				</script>
 	<script> 
 		$(function(){
 		  $("#footer").load("footer.html"); 
