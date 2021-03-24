@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 24 Mar 2021 12:37:26 at https://softcircles.net/demos/html/beatx/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://softcircles.net/demos/html/beatx/index.html -O1 "F:\beatx" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:43:51	Error: 	"Not Found" (404) at link https://softcircles.net/demos/html/beatx/about.html (from https://softcircles.net/demos/html/beatx/index.html)
+12:44:01	Error: 	"Not Found" (404) at link https://softcircles.net/demos/html/beatx/css/fonts/slick.eot (from https://softcircles.net/demos/html/beatx/css/slick-theme.css)
+12:44:01	Error: 	"Not Found" (404) at link https://softcircles.net/demos/html/beatx/css/fonts/slick.eot? (from https://softcircles.net/demos/html/beatx/css/slick-theme.css)
+12:44:01	Error: 	"Not Found" (404) at link https://softcircles.net/demos/html/beatx/css/fonts/slick.svg (from https://softcircles.net/demos/html/beatx/css/slick-theme.css)
+12:44:01	Error: 	"Not Found" (404) at link https://softcircles.net/demos/html/beatx/image/jplayer.blue.monday.video.play.png (from https://softcircles.net/demos/html/beatx/css/jplayer.blue.monday.min.css)
+12:44:01	Warning: 	Retry after error -4 (Incorrect length (16195 Bytes, 40805 expected)) at link https://softcircles.net/demos/html/beatx/images/bg4.jpg (from https://softcircles.net/demos/html/beatx/css/style.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 38 seconds : 206 links scanned, 199 files written (11582800 bytes overall) [11127159 bytes received at 27957 bytes/sec], 597346 bytes transferred using HTTP compression in 24 files, ratio 16%
+(5 errors, 1 warnings, 0 messages)

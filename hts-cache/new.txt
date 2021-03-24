@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+12:29:54	315/315	---M--	404	error ('Not%20Found')	text/html	date:Wed,%2024%20Mar%202021%2006:59:55%20GMT	https://softcircles.net/html/beatx/index.html	F:/beatx/softcircles.net/html/beatx/index.0.delayed	(from )
+12:29:55	315/315	---M--	404	error ('Not%20Found')	text/html	date:Wed,%2024%20Mar%202021%2006:59:56%20GMT	https://softcircles.net/robots.txt		(from )
