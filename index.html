@@ -27,6 +27,7 @@
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color4.css" title="color4" />
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color5.css" title="color5" />
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color6.css" title="color6" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<div id="jquery_jplayer_1" class="cp-jplayer"></div>
@@ -34,41 +35,12 @@
 	<div class="wrapper">
 		
 		<div id="header"></div>
-		<div id="homeinclude"></div>
-		<div id="blogsinclude"></div>
-		<div id="latestreleaseinclude"></div>
+		<div class="homeinclude" id="homeinclude"></div>
+		<div class="blogsinclude" id="blogsinclude"></div>
+		<div class="latestreleaseinclude" id="latestreleaseinclude"></div>
 		<div id="footer"></div>
 	</div>
 <script src="js/all.min.js"></script>
-<script>
-	function getContent(fragmentId, callback){
-
-	var pages = {
-	home: document.getElementById("home").innerHTML,
-	about: document.getElementById("blog").innerHTML
-	};
-
-	callback(pages[fragmentId]);
-	}
-	function loadContent(){
-
-	var contentDiv = document.getElementById("home"),
-	fragmentId = location.hash.substr(1);
-
-	getContent(fragmentId, function (content) {
-	contentDiv.innerHTML = content;
-	});
-
-	}
-
-	if(!location.hash) {
-	location.hash = "#home";
-	}
-
-	loadContent();
-
-	window.addEventListener("hashchange", loadContent)
-</script>
 <script> 
     $(function(){
       $("#header").load("header.html"); 
@@ -99,3 +71,33 @@
 
 <!-- Mirrored from softcircles.net/demos/html/beatx/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Mar 2021 07:09:14 GMT -->
 </html>
+<script>
+	$(function () {
+		$("#homeinclude").show();
+		$("#blogsinclude").hide();
+		$("#latestreleaseinclude").hide();
+		// $(".four").hide();
+		$(".home").on("click", function () {
+			$(".homeinclude").show();
+			$(".blogsinclude").hide();
+			$(".latestreleaseinclude").hide();
+		});
+		$(".blogs").on("click", function () {
+			$(".homeinclude").hide();
+			$(".blogsinclude").show();
+			$(".latestreleaseinclude").hide();
+		});
+		$("#three").on("click", function () {
+			$(".one").hide();
+			$(".two").hide();
+			$(".three").show();
+			$(".four").hide();
+		});
+		$("#four").on("click", function () {
+			$(".one").hide();
+			$(".two").hide();
+			$(".three").hide();
+			$(".four").show();
+		});
+	});
+</script>
