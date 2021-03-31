@@ -27,7 +27,39 @@
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color4.css" title="color4" />
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color5.css" title="color5" />
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color6.css" title="color6" />
-
+	<style>
+		.beatx-playyer .jp-audio .jp-play {
+			width: 50px;
+			height: 50px;
+			line-height: 52px;
+		}
+		.beatx-playyer .jp-play i{
+			font-size: 20px;
+		}
+		.musicc-controls .beatx-playyer .jp-title{
+			margin-bottom: 0px;
+			font-size: 23px;
+		}
+		.jp-audio .jp-interface, .jp-audio-stream .jp-interface{
+			height: 100px !important;
+		}
+		.musicc-controls .beatx-playyer .jp-audio .jp-controls{
+			margin-bottom: 5px;
+		}
+		.beatx-playyer .jp-audio .jp-type-playlist .jp-time-holder{
+			height: 19px;
+		}
+		.beatx-playyer .jp-current-time, .beatx-playyer .jp-duration,
+		.beatx-playyer .jp-toggles button
+		{
+			font-size: 17px;
+		}
+		.fixed-player{
+			position: fixed;
+			bottom: 0;
+			z-index: 999;
+		}
+	</style>
 </head>
 <body>
 	<div id="jquery_jplayer_1" class="cp-jplayer"></div>
@@ -112,7 +144,7 @@
 			<div class="beatx-playyer fixed-player">
 				<a href="#" title="" class="remove-music-player"><i class="fa fa-angle-down"></i></a>
 				<div class="container-fluid">
-					<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+					<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
 						<div class="jp-type-playlist">
 							<div class="jp-gui jp-interface align-items-center">
 								<div class="musicc-controls">
@@ -636,10 +668,95 @@
 				</div>
 			</div>
 		</footer>
+
+		<div id="jp_container_1" class="jp-audio fixed-player" role="application" aria-label="media player">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface play-list-style align-items-center">
+					<div class="album-img">
+						<img src="images/resources/album-img.jpg" alt="">
+					</div><!--album-img end-->
+					<div class="musicc-controls">
+						<div class="beatx-playyer">
+							<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+								<div class="jp-type-playlist">
+									<div class="jp-gui jp-interface align-items-center">
+										<div class="musicc-controls">
+											<div class="row align-items-center">
+												<div class="col-xl-12">
+													<div class="song-title">
+														<h2 class="jp-title"></h2>
+													</div>
+												</div>
+												<div class="col-xl-5 col-lg-5 col-md-5">
+													<div class="jp-controls d-flex flex-wrap align-items-center justify-content-start">
+														<button class="jp-previous" role="button" tabindex="0"><i class="flaticon-backward-arrows-couple-pointing-to-left"></i></button>
+														<button class="jp-play" role="button" tabindex="0"><i class="fa fa-play"></i></button>
+														<button class="jp-next" role="button" tabindex="0"><i class="flaticon-fast-forward"></i></button>
+													</div>
+												</div>
+												<div class="col-xl-7 col-lg-7 col-md-7 text-right">
+													<div class="controls-sc">
+														<div class="jp-progress">
+															<div class="jp-seek-bar">
+																<div class="jp-play-bar"></div>
+															</div>
+														</div>
+														<div class="jp-time-holder">
+															<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+															<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+														</div>
+														<div class="jp-toggles">
+															<button class="jp-repeat" role="button" tabindex="0"><i class="fa fa-redo-alt"></i></button>
+															<button class="jp-shuffle" role="button" tabindex="0"><i class="fa fa-random"></i></button>
+														</div>
+														<div class="jp-volume-controls">
+															<!-- <button class="jp-mute" role="button" tabindex="0"><i class="fa fa-volume-off"></i></button> -->
+															<div class="jp-volume-bar">
+																<div class="jp-volume-bar-value"></div>
+															</div>
+															<button class="jp-mute" role="button" tabindex="0"><i class="fa fa-volume-up"></i></button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="jp-playlist">
+										<h3>Episodes</h3>
+										<ul>
+											<li>&nbsp;</li>
+										</ul>
+									</div>
+									<div class="jp-no-solution">
+										<span>Update Required</span>
+										To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+									</div>
+								</div>
+							</div>
+						</div><!--beatx-music-player end-->
+					</div>
+				</div>
+				<div class="jp-playlist">
+					<h3>Episodes</h3>
+					<ul>
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<script src="js/all.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/sammy.js" type="text/javascript" charset="utf-8"></script>
+
+	<script>
+		$(".jp-playlist").hide();
+	</script>
 
 	<script type="text/javascript" charset="utf-8">
 		(function($) {
