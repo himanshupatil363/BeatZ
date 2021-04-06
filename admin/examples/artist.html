@@ -35,45 +35,27 @@
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link active" href="./album.html">
+                           <a class="nav-link" href="./album.html">
                            <i class="ni ni-pin-3 text-success"></i>
                            <span class="nav-link-text">Albums</span>
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="profile.html">
+                           <a class="nav-link active" href="./artist.html">
                            <i class="ni ni-single-02 text-yellow"></i>
                            <span class="nav-link-text">Artists</span>
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="tables.html">
-                           <i class="ni ni-bullet-list-67 text-default"></i>
-                           <span class="nav-link-text">Songs</span>
+                           <a class="nav-link" href="./music.html">
+                             <i class="ni ni-bullet-list-67 text-default"></i>
+                             <span class="nav-link-text">Music</span>
                            </a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="tables.html">
-                           <i class="ni ni-bullet-list-67 text-default"></i>
-                           <span class="nav-link-text">Blog</span>
-                           </a>
-                        </li>
+                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="tables.html">
                            <i class="ni ni-bullet-list-67 text-default"></i>
                            <span class="nav-link-text">Feedback</span>
-                           </a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="login.html">
-                           <i class="ni ni-key-25 text-info"></i>
-                           <span class="nav-link-text">Login</span>
-                           </a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="register.html">
-                           <i class="ni ni-circle-08 text-pink"></i>
-                           <span class="nav-link-text">Register</span>
                            </a>
                         </li>
                      </ul>
@@ -177,7 +159,7 @@
                                 <div class="form-group">
                                    <label class="form-control-label" for="genre-name">Artist Name</label>
                                    <input type="text" id="genre-name" class="form-control"
-                                      placeholder="Shreya Ghoshal" value="">
+                                      placeholder="Ex. Shreya Ghoshal" value="">
                                 </div>
                              </div>
                              <div class="col-lg-5 offset-lg-1">
@@ -189,17 +171,24 @@
                              <div class="col-lg-5">
                                 <div class="form-group ">
                                     <label class="form-control-label" for="image">Artist gender</label>
-                                    <div class="form-control">
-                                    <input type="radio" id="gender" lang="en" value="Female"> Female
-                                    <input type="radio" id="gender" lang="en" value="Male"> Male
-                                    <input type="radio" id="gender" lang="en" value="custom"> rather not to say
-                                </div>
+                                    <div class="custom-control custom-radio mb-3">
+                                      <input type="radio" id="male" name="gender" class="custom-control-input" checked>
+                                      <label class="custom-control-label" for="male">Male</label>
+                                    </div>
+                                    <div class="custom-control custom-radio mb-3">
+                                      <input type="radio" id="female" name="gender" class="custom-control-input">
+                                      <label class="custom-control-label" for="female">Female</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                       <input type="radio" id="other" name="gender" class="custom-control-input">
+                                       <label class="custom-control-label" for="other">Other</label>
+                                     </div>
                                 </div>
                              </div>
                              <div class="col-lg-5 offset-lg-1">
                                 <div class="form-group">
                                    <label class="form-control-label" for="genre-name">Artist description</label>
-                                    <textarea class="form-control" placeholder="much-abused crystal, arrogant crystal, successful crystal, enraged crystal, would-be crystal, frail silver-haired, infamous crystal, computer-generated male, finest mortal, frankly sordid and mercenary, dial fine, world-famous great, well-known male, ancient, senior, sweet grecian" rows="5" cols="50"></textarea>
+                                    <textarea class="form-control" placeholder="Ex. Shreya Ghoshal (born 12 March 1984) is an Indian playback singer. She has received four National Film Awards" rows="5" cols="50"></textarea>
                                  </div>
                              </div>
                              

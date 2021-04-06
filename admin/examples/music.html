@@ -35,45 +35,27 @@
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link active" href="./album.html">
+                           <a class="nav-link" href="./album.html">
                            <i class="ni ni-pin-3 text-success"></i>
                            <span class="nav-link-text">Albums</span>
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="profile.html">
+                           <a class="nav-link" href="./artist.html">
                            <i class="ni ni-single-02 text-yellow"></i>
                            <span class="nav-link-text">Artists</span>
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="tables.html">
+                           <a class="nav-link active" href="./music.html">
                            <i class="ni ni-bullet-list-67 text-default"></i>
-                           <span class="nav-link-text">Songs</span>
+                           <span class="nav-link-text">Music</span>
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="tables.html">
-                           <i class="ni ni-bullet-list-67 text-default"></i>
-                           <span class="nav-link-text">Blog</span>
-                           </a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="tables.html">
+                           <a class="nav-link" href="./feedback.html">
                            <i class="ni ni-bullet-list-67 text-default"></i>
                            <span class="nav-link-text">Feedback</span>
-                           </a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="login.html">
-                           <i class="ni ni-key-25 text-info"></i>
-                           <span class="nav-link-text">Login</span>
-                           </a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="register.html">
-                           <i class="ni ni-circle-08 text-pink"></i>
-                           <span class="nav-link-text">Register</span>
                            </a>
                         </li>
                      </ul>
@@ -157,7 +139,7 @@
                      <h1 class="display-1 text-white">Add Music</h1>
                  </div>
                  <div class="row">
-                     <p class="text-white mt-0 mb-5">demo.
+                     <p class="text-white mt-0 mb-5">Upload music from here
                      </p>
                  </div>
              </div>
@@ -180,43 +162,7 @@
                                       placeholder="Afreen Afreen" value="">
                                 </div>
                              </div>
-                             <div class="col-lg-5 offset-lg-1">
-                                <div class="form-group ">
-                                    <label class="form-control-label" for="image">Music Image</label>
-                                    <input type="file" class="form-control" id="image" lang="en">
-                                </div>
-                             </div>
-                             <div class="col-lg-5">
-                                <div class="form-group ">
-                                    <label class="form-control-label" for="image">Music Image</label>
-                                    <input type="file" class="form-control" id="image" lang="en">
-                                </div>
-                             </div>
-                             <div class="col-lg-5 offset-lg-1">
-                                <div class="form-group">
-                                   <label class="form-control-label" for="genre-name">Genre</label>
-                                    <select id="genre-name" class="form-control">
-                                        <option value="0">Select Genre</option>
-                                        <option value="1">Rock</option>
-                                        <option value="2">Jazz</option>
-                                        <option value="3">Disco</option>
-                                        <option value="4">Vocal</option>
-                                    </select>
-                                    </div>
-                             </div>
-                             <div class="col-lg-5">
-                                <div class="form-group">
-                                   <label class="form-control-label" for="genre-name">Album</label>
-                                    <select id="genre-name" class="form-control">
-                                        <option value="0">Select album</option>
-                                        <option value="1">Sad</option>
-                                        <option value="2">Party</option>
-                                        <option value="3">DJ-pop</option>
-                                        <option value="4">Romantic</option>
-                                    </select>
-                                    </div>
-                             </div>
-                             <div class="col-lg-5 offset-lg-1">
+                              <div class="col-lg-5 offset-lg-1">
                                 <div class="form-group">
                                    <label class="form-control-label" for="genre-name">Artist</label>
                                     <select id="genre-name" class="form-control">
@@ -228,10 +174,47 @@
                                     </select>
                                     </div>
                              </div>
+                            
+                             <div class="col-lg-5">
+                                <div class="form-group">
+                                   <label class="form-control-label" for="genre-name">Genre</label>
+                                    <select id="genre-name" class="form-control">
+                                        <option value="0">Select Genre</option>
+                                        <option value="1">Rock</option>
+                                        <option value="2">Jazz</option>
+                                        <option value="3">Disco</option>
+                                        <option value="4">Vocal</option>
+                                    </select>
+                                    </div>
+                             </div>
+                             <div class="col-lg-5 offset-lg-1">
+                                <div class="form-group">
+                                   <label class="form-control-label" for="genre-name">Album</label>
+                                    <select id="genre-name" class="form-control">
+                                        <option value="0">Select album</option>
+                                        <option value="1">Sad</option>
+                                        <option value="2">Party</option>
+                                        <option value="3">DJ-pop</option>
+                                        <option value="4">Romantic</option>
+                                    </select>
+                                    </div>
+                             </div>
+                             <div class="col-lg-5">
+                              <div class="form-group ">
+                                  <label class="form-control-label" for="music">Music</label>
+                                  <input type="file" class="form-control" id="music" accept="audio/*">
+                              </div>
+                           </div>
+                           <div class="col-lg-5 offset-lg-1">
+                              <div class="form-group ">
+                                  <label class="form-control-label" for="image">Music Image</label>
+                                  <input type="file" class="form-control" id="image" accept="image/*">
+                              </div>
+                           </div>
                              
                           </div>
                           <div class="row flex justify-content-center">
-                              <buttton class="btn btn-success px-5 my-4">Add</buttton>
+                              <buttton class="btn btn-success px-5 my-4">Add Music</buttton>
                           </div>
                        </div>
                     </form>
