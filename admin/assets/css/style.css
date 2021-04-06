@@ -1,22 +1,5 @@
 @charset 'UTF-8';
 
-/*!
-
-=========================================================
-* Argon Dashboard - v1.2.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 :root {
     --blue: #5e72e4;
     --indigo: #5603ad;
@@ -5752,8 +5735,8 @@ input[type=submit].btn-block {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    border-color: #5e72e4;
-    background-color: #5e72e4
+    border-color: #2dce89;
+    background-color: #2dce89
 }
 
 .page-item.disabled .page-link {
