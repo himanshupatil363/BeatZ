@@ -67,8 +67,8 @@
 								<li><a href="#/blog" class="blogs">Blogs</a></li>
 								<li><a href="#/release" class="release">Latest Releases</a></li>
 								<li><a href="#/authors" class="authors">Artists</a></li>
-								<li><a href="#">Albums</a></li>
-								<li><a href="#">Genre</a></li>
+								<li><a href="#/album">Albums</a></li>
+								<li><a href="#/genre">Genre</a></li>
 								<li><a href="#/podcasts" class="podcasts">Podcasts</a></li>
 							</ul>
 						</nav>
@@ -86,10 +86,10 @@
 				<li><a class="active" href="#home">Home</a></li>
 				<li><a href="#blogs">Blogs</a></li>
 				<li><a href="#release">Latest Releases</a></li>
-				<li><a href="#">Artists</a></li>
-				<li><a href="#">Albums</a></li>
-				<li><a href="#">Genre</a></li>
-				<li><a href="#">Podcasts</a></li>
+				<li><a href="#/author">Artists</a></li>
+				<li><a href="#/album">Albums</a></li>
+				<li><a href="#/genre">Genre</a></li>
+				<li><a href="#/podcasts">Podcasts</a></li>
 			</ul>
 
 		</div>
@@ -549,11 +549,26 @@
 					// console.log(con);
 
 				});
+				this.get('#/genre', function() {
+					$("#content").load("genre.html");
+				});
+				
+				this.get('#/genresong', function() {
+					$("#content").load("genresong.html");
+				});
 				this.get('#/release', function() {
 					$("#content").load("release_content.html");
 				});
 				this.get('#/authors', function() {
 					$("#content").load("authors_content.html");
+
+				});
+				this.get('#/album', function() {
+					$("#content").load("album.html");
+
+				});
+				this.get('#/albumsong', function() {
+					$("#content").load("albumsong.html");
 
 				});
 				this.get('#/podcasts', function() {
