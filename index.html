@@ -27,7 +27,31 @@
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color4.css" title="color4" />
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color5.css" title="color5" />
     <link rel="alternate stylesheet" type="text/css" href="css/color-schemes/color6.css" title="color6" />
-	
+		<style>
+        ul li ul.dropdown {
+            min-width: 100%;
+            /* Set width of the dropdown */
+            background: #f2f2f2;
+            display: none;
+			position: absolute;
+            z-index: 999;
+            left: 0;
+        }
+		ul li ul * {
+			padding: 20px;
+		}
+        li:hover ul.dropdown {
+            display: flex;
+			flex-direction: column;
+            /* Display the dropdown */
+        }
+		.tile{
+			color:white;
+		}
+		.tile:hover{
+			color: #00D665;
+		}
+	</style>
 </head>
 <body>
 	<div id="jquery_jplayer_1" class="cp-jplayer"></div>
@@ -43,8 +67,17 @@
 								<li><a href="#" title="">Who We Are</a></li>
 								</ul>
 						</div>
-						<div class="col-xl-4 col-lg-5 col-md-6 mll-auto">
-							<a href="login-register.html" title="" class="login"><i class="flaticon-user"></i>Login or Register</a>
+						<div class="col-xl-4 col-lg-5 col-md-6 mll-auto d-flex align-items-center">
+							<a href="login-register.html" title="" class="login mr-4"><i class="flaticon-user"></i>Login or Register</a>
+						<!--<ul class="mr-4">
+								<li>
+									<a class="tile" href="#">Brindesh</a>
+									<ul class="dropdown">
+										<li><a href="#">My Playlist</a></li>
+										<li><a href="#">Logout</a></li>
+									</ul>
+								</li>
+							</ul>-->
 							<ul class="social-links">
 								<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
 								<li><a href="#" title=""><i class="fab fa-twitter"></i></a></li>
